@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
 import { Observable } from 'rxjs';
-
 import { map } from 'rxjs/operators';
 import { Player } from '../interfaces/player';
 
@@ -28,6 +27,7 @@ export class PlayerServiceService {
   deletePlayer(id: string) {
     this.db.list('/players').remove(id);
   }
+
   editPlayer(newPlayerData:any) {
     const $key = newPlayerData.$key;
     delete(newPlayerData.$key);
