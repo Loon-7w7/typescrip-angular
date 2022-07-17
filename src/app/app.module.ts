@@ -9,12 +9,16 @@ import { environment } from 'src/environments/environment';
 import { PlayerServiceService } from './services/player-service.service';
 import { TeamService } from './services/team.service';
 import { TeamTableComponent } from './components/team-table/team-table.component';
+import { PlayerrTableComponent } from './components/playerr-table/playerr-table.component';
+import { PlayerDialogComponent } from './components/player-dialog/player-dialog.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TeamTableComponent
+    TeamTableComponent,
+    PlayerrTableComponent,
+    PlayerDialogComponent
   ],
   imports: [
     BrowserModule,
