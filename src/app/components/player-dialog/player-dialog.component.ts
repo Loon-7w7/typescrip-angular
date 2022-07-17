@@ -17,7 +17,7 @@ export class PlayerDialogComponent implements OnInit {
   @Input() player: Player | any ;
   @Output() closeDialog: EventEmitter<boolean> = new EventEmitter();
   private team:any;
-  public country:any = Object.keys(Country).map(key => ({ label: key, key: this.country[key] }));
+  public countries = Object.keys(Country).map(key => ({ label: key, key: Country }));
   public squadNumber = Object.keys(SquadNumber)
   .slice(Object.keys(SquadNumber).length / 2)
     .map($key => ({

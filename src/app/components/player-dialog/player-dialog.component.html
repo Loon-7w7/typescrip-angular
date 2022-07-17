@@ -34,7 +34,7 @@
         <div class="form-group">
           <label for="nationality">Nationality</label>
           <select class="form-control" name="nationality" [ngModel]="player?.nationality" ngModel required>
-            <option *ngFor="let nationality of country" [value]="nationality.key">{{ nationality.label }}</option>
+            <option *ngFor="let nationality of countries" [value]="nationality.key">{{ nationality.label }}</option>
           </select>
         </div>
 

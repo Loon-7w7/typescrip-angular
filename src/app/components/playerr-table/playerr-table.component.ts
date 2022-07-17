@@ -31,7 +31,7 @@ export class PlayerrTableComponent implements OnInit  {
     });
   }
 
-  editPlayer(player: Player) {
+  editPlayer(player: Player): void {
     this.selectedPlayer = { ...player };
     this.showModal = true;
     setTimeout(() => {
