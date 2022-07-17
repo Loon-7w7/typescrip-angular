@@ -1,0 +1,23 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+
+  },
+  "hosting": {
+    "site": "typescript-gato-angular",
+    "Ignore": [
+      "firebase.json",
+      "**/*",
+      "**/node_modules/**"
+
+
+    ],
+    "public": "./dist/typescrip-angular"
+  },
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ]
+}
